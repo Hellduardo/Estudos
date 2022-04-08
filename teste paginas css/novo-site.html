@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsívo</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        html{
+            font-family: "Courier New";
+        }
+        
+        body{
+            background-color: azure;
+        }
+
+        [class*="col-"]{
+            float: left;
+            padding: 15px;
+        }
+
+        .row::after{
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .header{
+            background-color: brown;
+            color: azure;
+            padding: 15px;
+        }
+
+        .menu ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0;
+        }
+
+        .menu li{
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color:coral;
+        }
+        
+        .menu li:hover{
+            background-color: antiquewhite;
+        }
+
+        .side{
+            background-color:cornflowerblue;
+            color: azure;
+            text-align: center;
+            font-size: 15px;
+            padding: 20px;
+        }
+
+        .footer{
+            background-color: brown;
+            color: beige;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        .center{
+            background-color: cornflowerblue;
+            color: azure;
+            margin-top: 50px;  
+        }
+
+        @media only screen and (max-width: 768px){
+            [class*="col-"]{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Título do Site</h1>
+    </div>
+    <div class="row">
+
+        <div class="col-3 menu">
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+
+        <div class="col-6 center">
+            
+            <p>Não vai ser fácil!</p>
+            <p>Lorem ipsum dolor sit amet consectetur 
+            <p>adipisicing elit. Consectetur vel quidem hic</p>
+            <p>illum aperiam corrupti accusamus, similique</p>
+            <p>fugiat doloribus facilis in aliquam nostrum</p>
+            <p>odio delectus id iste voluptatum officiis at.</p>
+        </div>
+        
+            <div class="col-3">
+
+                <div class="side">
+                    <h2>Título 1</h2>
+                    <p>Qualquer coisa</p>
+                    <h2>Título 2</h2>
+                    <p>Coisa Qualquer</p>
+                    <h2>Título 3</h2>
+                    <p>Qualsa Coiquer</p>
+                </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Terminou a bagaceira!!!
+    </div>
+
+</body>
+</html>
