@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Cadastro</title>
+    <style>
+        body{
+            background-color: rgba(0, 38, 255, 0.219);
+        }
+        h1{
+            color: blue;
+        }
+        .container{
+            background-color: rgba(137, 43, 226, 0.329);
+            width: auto;
+            height: auto;
+            border-radius: 10px;
+            font-family: 'Courier New', Courier;
+            font-weight: bolder;
+        }
+        .header{
+            background-color: blueviolet;
+            width: 700px;
+            height: auto;
+            border-radius: 10px;
+            font-weight: bolder;
+        }
+        .p1{
+            color: blue;
+            font-size: x-large;
+            background-color: rgba(137, 43, 226, 0.747);
+            width: 500px;
+            height: 30px;
+            border-radius: 10px;
+        }
+        .container__cadastro__label{
+            font-size: x-large;
+            color: rgba(63, 1, 163, 0.966);
+            margin: 05px;
+            padding: 35px; 
+        }
+        .container__cadastro__input{
+            background-color: rgb(184, 118, 184);
+            width: auto;
+            height: 15px;
+            border-radius: 10px;
+            
+        }
+
+        .container__cadastro__button{
+            background-color: rgba(190, 42, 190, 0.774);
+            font-weight: bolder;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+
+            <h1>Vamos começar a Aventura!</h1>
+        
+        </div>    
+            <div>
+
+            <p class="p1">Formulário de Cadastro</p>
+
+                <div class="container__cadastro">
+                <form action="">
+
+                <label for="nome" class="container__cadastro__label">Nome</label>
+                <input type="text" name="nome" class="container__cadastro__input"/>
+
+                <label for="sobrenome" name="sobrenome" class="container__cadastro__label">Sobrenome</label>
+                <input type="text" name="sobrenome" class="container__cadastro__input"/>
+
+                <label for="email" class="container__cadastro__label">Email</label>
+                <input type="email" name="email" class="container__cadastro__input"/>
+
+                <label for="senha" class="container__cadastro__label">Senha</label>
+                <input type="password" name="senha" class="container__cadastro__input"/>
+
+                <label for="confirmar-senha" class="container__cadastro__label">Confirmar Senha</label>
+                <input type="password" name="confirmar-senha" class="container__cadastro__input"/>
+
+                <input type="submit" value="Enviar" class="container__cadastro__button"/>
+
+                </form>
+                </div>
+
+            </div>
+
+    </div>
+</body>
+</html>
